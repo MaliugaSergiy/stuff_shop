@@ -1,0 +1,93 @@
+<!--#insert file="html/-top.html"-->
+<section class="breadcrumbs">
+	<div class="wr">
+		<nav class="breadcrumb">
+			<a class="breadcrumb-item" href="#">Главная</a>
+			<span class="breadcrumb-item active">Помощь</span>
+		</nav>
+	</div>
+</section>
+
+<div class="help_index">
+	<div class="wr">
+		<div class="aside">
+			<h2 class="name">информация</h2>
+			<ul>
+				<li><a href="#">О магазине</a></li>
+				<li class="active"><a href="#">Помощь</a></li>
+				<li><a href="#">Контакты</a></li>
+				<li><a href="#">Доставка и Оплата</a></li>
+				<li><a href="#">Сотрудничесство</a></li>
+				<li><a href="#">Гарантии</a></li>
+			</ul>
+		</div>
+		<div class="main_help">
+			<h2>помощь</h2>
+			<div class="list">
+				<div class="containerr">
+					<ul class="accordeon">
+						<li class="accordeon_item active">
+							<div class="accordeon_title">Как и где мне оплатить квитанцию?</div>
+							<div class="accordeon_content">
+								<p>Квитанцию Вы распечатываете и оплачиваете в любом отделении банка в Вашем городе.</p>
+								<p>Время ожидания оплаты - 3 рабочих дня, по истечении этого срока заказ аннулируется.</p>
+							</div>
+						</li>
+						<li class="accordeon_item ">
+							<div class="accordeon_title">Как мне оплатить заказа через Приват24?</div>
+							<div class="accordeon_content">
+								<p>Квитанцию Вы распечатываете и оплачиваете в любом отделении банка в Вашем городе.</p>
+								<p>Время ожидания оплаты - 3 рабочих дня, по истечении этого срока заказ аннулируется.</p>
+								<p>Время ожидания оплаты - 3 рабочих дня, по истечении этого срока заказ аннулируется.</p>
+								<p>Время ожидания оплаты - 3 рабочих дня, по истечении этого срока заказ аннулируется.</p>
+								<p>Время ожидания оплаты - 3 рабочих дня, по истечении этого срока заказ аннулируется.</p>
+							</div>
+						</li>
+						<li class="accordeon_item">
+							<div class="accordeon_title">Как узнать о состоянии заказа?</div>
+							<div class="accordeon_content">
+								<p>Квитанцию Вы распечатываете и оплачиваете в любом отделении банка в Вашем городе.</p>
+								<p>Время ожидания оплаты - 3 рабочих дня, по истечении этого срока заказ аннулируется.</p>
+							</div>
+						</li>
+						<li class="accordeon_item">
+							<div class="accordeon_title">Я оформил заказ, когда мне вышлют реквизиты для оплаты?</div>
+							<div class="accordeon_content">
+								<p>Квитанцию Вы распечатываете и оплачиваете в любом отделении банка в Вашем городе.</p>
+								<p>Время ожидания оплаты - 3 рабочих дня, по истечении этого срока заказ аннулируется.</p>
+							</div>
+						</li>
+						<li class="accordeon_item">
+							<div class="accordeon_title">Я оплатил заказ, как мне подтвердить оплату?</div>
+							<div class="accordeon_content">
+								<p>Квитанцию Вы распечатываете и оплачиваете в любом отделении банка в Вашем городе.</p>
+								<p>Время ожидания оплаты - 3 рабочих дня, по истечении этого срока заказ аннулируется.</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+	$(function(){
+		// hide all content
+		$('.accordeon_content').hide();
+
+		$('.accordeon_item.active .accordeon_content').slideDown();
+
+		$('.accordeon_title').click(function(){
+			$(this).parent().toggleClass('active').siblings().removeClass('active');
+			$('.accordeon_content').slideUp();
+
+			if(!$(this).next().is(":visible")) {
+				$(this).next().slideDown();
+			}
+		});
+	});
+	
+</script>
+
+
+<!--#insert file="html/-bottom.html"-->

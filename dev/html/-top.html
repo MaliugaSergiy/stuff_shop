@@ -1,0 +1,524 @@
+<!-- The page -->
+<div class="remodal-bg">
+	<div class="page">
+		<div class="header Fixed">
+			<div class="header_top">
+				<div class="wr">
+					<div class="mobile_left">
+						<a class="burger hamburger hamburger--spin" href="#menu">
+							<span class="hamburger-box">
+								<span class="hamburger-inner"></span>
+							</span>
+						</a>
+						<button class="search_btn"><i class="fa fa-search"></i></button>
+					</div>
+
+					<div class="logo_wrapp">
+						<a href="#" class="logo"><img src="img/ico/logo_.png" alt="StuffShop"></a>
+					</div>
+					<form action="" class="search_form">
+						<div class="above_input">
+							<span class="tel"><a href="tel:+0442273860"><i class="fa fa-phone"></i> (044) 227-38-60 </a></span>
+							<span class="shelule">Call-центр  пн - пт с 10:00 до 18:00 </span>
+						</div>
+						<form action="">
+							<div class="search">
+								<input type="text" placeholder="Что вы хотите найти?">
+								<button class="btn_main_red" type="submit"><i class="fa fa-search"></i></button>
+							</div>
+						</form>
+					</form>
+					<ul class="header_nav main_nav">
+						<li class="dropdown">
+							<a href="#" class="dropp dropdown-toggle">
+								<i class="fa fa-question-circle"></i>
+								<div class="name">Помощь<b class="caret"></b></div>
+							</a>
+							<div class="dropdown-menu drop_menu">
+								<a href="#">Контакты</a>
+								<a href="#">Доставка и оплата</a>
+								<a href="#">Вопросы и ответы</a>
+								<a href="#">Адреса магазинов</a>
+							</div>
+						</li>
+						<li class="dropdown main_nav" data-auth="1">
+							<a href="#" class="dropp dropdown-toggle">
+								<i class="fa fa-user"></i>
+								<div class="name">Аккаунт<b class="caret"></b></div>
+							</a>
+							<div class="dropdown-menu drop_menu">
+								<div class="auth">
+									<a href="#">Мой кабинет</a>
+									<a href="#">Мои заказы</a>
+									<a href="#">Мои желания</a>
+									<a href="#">Выйти</a>
+								</div>
+								<div class="no-auth">
+									<a href="#">Войти</a>
+									<a href="#">Регистрация</a>
+								</div>
+
+							</div>
+						</li>
+						<li class="dropdown main_nav">
+							<a href="#" class="dropp">
+								<i class="fa fa-heart" data-num="2"></i>
+								<div class="name">Избранное</div>
+							</a>
+						</li>
+						<li class="dropdown main_nav" data-empty="0">
+							<a href="#" class="dropp">
+								<i class="fa fa-shopping-cart" data-num="3"></i>
+								<div class="name">Корзина</div>
+							</a>
+							<div class="dropdown-menu drop_menu">
+								<div class="empty">
+									<div class="ico"></div>
+									<div class="info">
+										<div class="name">Ваша корзина пуста</div>
+										<div class="descr">Добавляйте понравившиеся товары в корзину <br> Или <a href="#">авторизуйтесь</a>, если добавляли ранее
+										</div>
+									</div>
+								</div>
+								<div class="no-empty">
+									<div class="goods">
+										<div class="descr">
+											В корзине <span class="amount">1</span> товар<br> на сумму <span class="summa">22 699</span> грн
+										</div>
+										<a href="#" class="link"><i class="fa fa-chevron-circle-down"></i></a>
+									</div>
+									<a href="#" class="to-order">оформить заказ</a>
+									<a href="#" class="to-basket"><i class="fa fa-shopping-cart"></i> Перейти в корзину</a>
+								</div>
+							</div>
+
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<script>
+				$(document).ready(function() {
+					$(".header_nav .dropp > .fa").filter('[data-num]').each(function() {
+						if ($(this).attr("data-num") > 0) {
+							($(this).addClass("num"))
+						}
+					});
+				});
+
+			</script>
+
+			<div class="header_bottom">
+				<div class="wr">
+					<ul class="main_nav">
+						<li>
+							<a title="" href="#">обувь</a>
+							<div class="drop_menu qqqwww">
+								<div class="drop_menu__item item_type">
+									<!--<div class="item__name">Кросовки все</div>-->
+									<ul class="item__list">
+										<li><a href="#">Кросcовки все</a></li>
+										<li><a href="#">Слипоны</a></li>
+										<li><a href="#">Шлепки</a></li>
+										<li><a href="#">Женские кроссовки</a></li>
+										<li><a href="#">Зимние кроссовки</a></li>
+										<li><a href="#">Ботинки</a></li>
+										<li><a href="#">Со скидкой</a></li>
+									</ul>
+								</div>
+								<div class="drop_menu__item item_brand">
+									<div class="item__name">Бренды</div>
+									<ul class="item__list no-bold">
+										<li><a href="#">Lokai</a></li>
+										<li><a href="#">DVS</a></li>
+										<li><a href="#">Globe</a></li>
+										<li><a href="#">Fallen</a></li>
+										<li><a href="#">Revol</a></li>
+										<li><a href="#">Lando</a></li>
+									</ul>
+								</div>
+								<div class="drop_menu__item item_sizes">
+									<div class="item__name">Размеры</div>
+									<ul class="item__list table no-bold">
+										<li><a href="#">4</a></li>
+										<li><a href="#">4.5</a></li>
+										<li><a href="#">5</a></li>
+										<!--<li><a href="#">5.5</a></li>-->
+										<!--<li><a href="#">6</a></li>-->
+										<!--<li><a href="#">6.5</a></li>-->
+										<!--<li><a href="#">7</a></li>-->
+										<!--<li><a href="#">7.5</a></li>-->
+										<!--<li><a href="#">8</a></li>-->
+										<!--<li><a href="#">8.5</a></li>-->
+										<!--<li><a href="#">9</a></li>-->
+										<!--<li><a href="#">9.5</a></li>-->
+										<!--<li><a href="#">10</a></li>-->
+										<!--<li><a href="#">10.5</a></li>-->
+										<!--<li><a href="#">11</a></li>-->
+										<!--<li><a href="#">11.5</a></li>-->
+										<!--<li><a href="#">12</a></li>-->
+										<!--<li><a href="#">13</a></li>-->
+										<!--<li><a href="#">K'1</a></li>-->
+										<!--<li><a href="#">K'3</a></li>-->
+									</ul>
+								</div>
+								<div class="drop_menu__item item_banner" style="background-image: url(./img/01.jpg)"></div>
+							</div>
+						</li>
+						<li>
+							<a title="" href="#">одежда</a>
+							<div class="drop_menu">
+								<div class="drop_menu__item item_type">
+									<!--<div class="item__name">Кросовки все</div>-->
+									<ul class="item__list">
+										<li><a href="#">Регланы, свитшоты</a></li>
+										<li><a href="#">Футболки</a></li>
+										<li><a href="#">Лонгсливы</a></li>
+										<li><a href="#">Майки</a></li>
+										<li><a href="#">Рубашки</a></li>
+										<li><a href="#">Куртки, ветровки</a></li>
+										<li><a href="#">Джинсы</a></li>
+										<li><a href="#">Шорты</a></li>
+										<li><a href="#">Штаны спортивные</a></li>
+									</ul>
+								</div>
+								<div class="drop_menu__item item_brand">
+									<!--<div class="item__name">Бренды</div>-->
+									<ul class="item__list no-bold">
+										<li><a href="#">Новая одежда</a></li>
+										<li><a href="#">Вся одежда</a></li>
+										<li><a href="#">Одежда со скидками</a></li>
+									</ul>
+								</div>
+								<div class="drop_menu__item item_brand">
+									<div class="item__name">Бренды</div>
+									<ul class="item__list  no-bold">
+										<li><a href="#">Almost</a></li>
+										<li><a href="#">Fallen</a></li>
+										<li><a href="#">Fourstar</a></li>
+										<li><a href="#">Globe</a></li>
+										<li><a href="#">Lakai</a></li>
+										<li><a href="#">Malita</a></li>
+										<li><a href="#">Neff</a></li>
+										<li><a href="#">Revol</a></li>
+										<li><a href="#">Spitfire</a></li>
+									</ul>
+								</div>
+								<div class="drop_menu__item item_banner" style="background-image: url(./img/02.png)"></div>
+							</div>
+						</li>
+						<li>
+							<a title="" href="#">аксесуары</a>
+							<div class="drop_menu">
+								<div class="drop_menu__item item_type">
+									<!--<div class="item__name">Кросовки все</div>-->
+									<ul class="item__list">
+										<li><a href="#">Кепки, тракеры</a></li>
+										<li><a href="#">Шапки</a></li>
+										<li><a href="#">Рюкзаки</a></li>
+										<li><a href="#">Сумки на пояс</a></li>
+										<li><a href="#">Кошельки</a></li>
+										<li><a href="#">Очки</a></li>
+										<li><a href="#">Часы</a></li>
+										<li><a href="#">Перчатки</a></li>
+										<li><a href="#">Ремни</a></li>
+										<li><a href="#">Носки</a></li>
+									</ul>
+								</div>
+								<div class="drop_menu__item item_brand">
+									<!--<div class="item__name">Бренды</div>-->
+									<ul class="item__list no-bold">
+										<li><a href="#">Новые аксессуары</a></li>
+										<li><a href="#">Все аксессуары</a></li>
+										<li><a href="#">Аксессуары со скидками</a></li>
+									</ul>
+								</div>
+								<div class="drop_menu__item item_brand">
+									<div class="item__name">Бренды</div>
+									<ul class="item__list  no-bold">
+										<li><a href="#">Dakine</a></li>
+										<li><a href="#">Eclectik</a></li>
+										<li><a href="#">Fallen</a></li>
+										<li><a href="#">Globe</a></li>
+										<li><a href="#">Neff</a></li>
+										<li><a href="#">Pilsok</a></li>
+										<li><a href="#">Revol</a></li>
+										<li><a href="#">Sammy icon</a></li>
+										<li><a href="#">Urban planet</a></li>
+									</ul>
+								</div>
+								<div class="drop_menu__item item_banner" style="background-image: url(./img/03.png)"></div>
+							</div>
+						</li>
+						<li>
+							<a title="" href="#">скейтборы</a>
+							<div class="drop_menu">
+								<div class="drop_menu__item item_type">
+									<!--<div class="item__name">Кросовки все</div>-->
+									<ul class="item__list">
+										<li><a href="#">Собранные борды</a></li>
+										<li>
+											<a href="#"></a>
+										</li>
+										<li><a class="no-bold" href="#">Скейтборд комплиты</a></li>
+										<li><a class="no-bold" href="#">Круизеры</a></li>
+										<li><a class="no-bold" href="#">Лонгборды</a></li>
+										<li>
+											<a href="#"></a>
+										</li>
+										<li><a href="#">"Как выбрать скейт?"</a></li>
+									</ul>
+								</div>
+								<div class="drop_menu__item item_brand">
+									<div class="item__name">Комплектующие</div>
+									<ul class="item__list no-bold">
+										<li><a href="#">Деки</a></li>
+										<li><a href="#">Подвески</a></li>
+										<li><a href="#">Колеса</a></li>
+										<li><a href="#">Наждак</a></li>
+										<li><a href="#">Болты</a></li>
+										<li><a href="#">Подшипники</a></li>
+										<li><a href="#">Подкладки</a></li>
+									</ul>
+								</div>
+								<div class="drop_menu__item item_brand">
+									<div class="item__name">Скейт аксессуары</div>
+									<ul class="item__list  no-bold">
+										<li><a href="#">Ключи, Мультитулы</a></li>
+										<li><a href="#">Набор запчастей</a></li>
+										<li><a href="#">Втулки</a></li>
+										<li><a href="#">Воск</a></li>
+										<li><a href="#">Стикерпаки, Наклейки</a></li>
+										<li><a href="#">Защита</a></li>
+										<li><a href="#">Чехлы для скейтбордов</a></li>
+									</ul>
+								</div>
+								<div class="drop_menu__item item_banner" style="background-image: url(./img/04.png)"></div>
+							</div>
+						</li>
+						<li>
+							<a title="" href="#">BMX</a>
+							<div class="drop_menu">
+								<div class="drop_menu__item item_type">
+									<div class="item__name">Компоненты</div>
+									<ul class="item__list">
+										<li><a class="no-bold" href="#">Выноса</a></li>
+										<li><a class="no-bold" href="#">Защита втулок</a></li>
+										<li><a class="no-bold" href="#">Камеры</a></li>
+										<li><a class="no-bold" href="#">Каретки</a></li>
+										<li><a class="no-bold" href="#">Обода</a></li>
+										<li><a class="no-bold" href="#">Пеги</a></li>
+										<li><a class="no-bold" href="#">Подседельный зажим</a></li>
+										<li><a class="no-bold" href="#">Покрышки</a></li>
+										<li><a class="no-bold" href="#">Рамы</a></li>
+										<li><a class="no-bold" href="#">Рули</a></li>
+										<li><a class="no-bold" href="#">Седла</a></li>
+										<li><a class="no-bold" href="#">Разное</a></li>
+									</ul>
+								</div>
+								<div class="drop_menu__item item_brand">
+									<div class="item__name">Экипировка</div>
+									<ul class="item__list no-bold">
+										<li><a href="#">Защита ног</a></li>
+										<li><a href="#">Шлемы</a></li>
+									</ul>
+								</div>
+								<div class="drop_menu__item item_brand">
+									<div class="item__name">Бренды</div>
+									<ul class="item__list  no-bold">
+										<li><a href="#">BSD</a></li>
+										<li><a href="#">CF</a></li>
+										<li><a href="#">Cinema</a></li>
+										<li><a href="#">Duo</a></li>
+										<li><a href="#">Federal</a></li>
+										<li><a href="#">King Kong</a></li>
+										<li><a href="#">Simple Bike</a></li>
+									</ul>
+								</div>
+								<div class="drop_menu__item item_banner" style="background-image: url(./img/02.png)"></div>
+							</div>
+						</li>
+						<li>
+							<a title="" href="#">skilltoy</a>
+							<div class="drop_menu">
+								<div class="drop_menu__item item_type">
+									<div class="item__name">Фингербординг</div>
+									<ul class="item__list">
+										<li><a class="no-bold" href="#">Фингерборд комплиты</a></li>
+										<li><a class="no-bold" href="#">Фингерборд наборы</a></li>
+										<li><a class="no-bold" href="#">Деки</a></li>
+										<li><a class="no-bold" href="#">Колеса</a></li>
+										<li><a class="no-bold" href="#">Подвески</a></li>
+										<li><a class="no-bold" href="#">Риптейп</a></li>
+									</ul>
+								</div>
+								<div class="drop_menu__item item_brand">
+									<div class="item__name">Yoyo</div>
+									<ul class="item__list no-bold">
+										<li><a href="#">Все yoyo</a></li>
+										<li><a href="#">Запчасти Yo-Yo</a></li>
+										<li>
+											<a href="#"></a>
+										</li>
+										<li><a href="#">Футбэги, Соксы</a></li>
+									</ul>
+								</div>
+								<div class="drop_menu__item item_brand">
+									<div class="item__name">Бренды</div>
+									<ul class="item__list  no-bold">
+										<li><a href="#">Blackriver</a></li>
+										<li><a href="#">DK Fingerboards</a></li>
+										<li><a href="#">Tech Deck</a></li>
+										<li><a href="#">Aero yoyo</a></li>
+										<li><a href="#">Yoyo Factory</a></li>
+										<li><a href="#">Sox</a></li>
+									</ul>
+								</div>
+								<div class="drop_menu__item item_banner" style="background-image: url(./img/01.jpg)"></div>
+							</div>
+						</li>
+						<li>
+							<a title="" href="#">граффити</a>
+							<div class="drop_menu">
+								<div class="drop_menu__item item_type">
+									<!--<div class="item__name">Кросовки все</div>-->
+									<ul class="item__list">
+										<li><a href="#">Кэпы</a></li>
+									</ul>
+								</div>
+								<div class="drop_menu__item item_brand">
+									<div class="item__name">Маркера</div>
+									<ul class="item__list no-bold">
+										<li><a href="#">Баллоны</a></li>
+										<li><a href="#">Подвески</a></li>
+										<li><a href="#">Колеса</a></li>
+										<li><a href="#">Наждак</a></li>
+										<li><a href="#">Болты</a></li>
+										<li><a href="#">Подшипники</a></li>
+										<li><a href="#">Подкладки</a></li>
+									</ul>
+								</div>
+								<div class="drop_menu__item item_brand">
+									<div class="item__name">Бренды</div>
+									<ul class="item__list  no-bold">
+										<li><a href="#">Dope</a></li>
+										<li><a href="#">MTN</a></li>
+									</ul>
+								</div>
+								<div class="drop_menu__item item_banner" style="background-image: url(./img/03.png)"></div>
+							</div>
+						</li>
+						<li>
+							<a title="" href="#">бренды</a>
+							<div class="drop_menu brebds_drop">
+								<ul class="">
+									<li>
+										<a href="#"><img title="adidas" src="ico/logo_brends/1.png" alt=""></a>
+									</li>
+									<li>
+										<a href="#"><img title="BILLABONG" src="ico/logo_brends/2.png" alt=""></a>
+									</li>
+									<li>
+										<a href="#"><img title="BURTON" src="ico/logo_brends/3.png" alt=""></a>
+									</li>
+									<li>
+										<a href="#"><img title="carhartt" src="ico/logo_brends/4.png" alt=""></a>
+									</li>
+									<li>
+										<a href="#"><img title="DC" src="ico/logo_brends/5.png" alt=""></a>
+									</li>
+									<li>
+										<a href="#"><img title="ELEMENT" src="ico/logo_brends/6.png" alt=""></a>
+									</li>
+									<li>
+										<a href="#"><img title="FT" src="ico/logo_brends/7.png" alt=""></a>
+									</li>
+									<li>
+										<a href="#"><img title="LIBtech" src="ico/logo_brends/8.png" alt=""></a>
+									</li>
+									<li>
+										<a href="#"><img title="naketano" src="ico/logo_brends/9.png" alt=""></a>
+									</li>
+									<li>
+										<a href="#"><img title="NIKE" src="ico/logo_brends/10.png" alt=""></a>
+									</li>
+									<li>
+										<a href="#"><img title="NIKITA" src="ico/logo_brends/11.png" alt=""></a>
+									</li>
+									<li>
+										<a href="#"><img title="BAKLEY" src="ico/logo_brends/12.png" alt=""></a>
+									</li>
+									<li>
+										<a href="#"><img title="pataginia" src="ico/logo_brends/13.png" alt=""></a>
+									</li>
+									<li>
+										<a href="#"><img title="QUIKSILVER" src="ico/logo_brends/14.png" alt=""></a>
+									</li>
+									<li>
+										<a href="#"><img title="salomon" src="ico/logo_brends/15.png" alt=""></a>
+									</li>
+									<li>
+										<a href="#"><img title="THRASHER" src="ico/logo_brends/16.png" alt=""></a>
+									</li>
+									<li>
+										<a href="#"><img title="VANS" src="ico/logo_brends/17.png" alt=""></a>
+									</li>
+									<li>
+										<a href="#"><img title="Volcom" src="ico/logo_brends/18.png" alt=""></a>
+									</li>
+									<li>
+										<a href="#"><img title="salomon" src="ico/logo_brends/15.png" alt=""></a>
+									</li>
+									<li>
+										<a href="#"><img title="THRASHER" src="ico/logo_brends/16.png" alt=""></a>
+									</li>
+									<li>
+										<a href="#"><img title="VANS" src="ico/logo_brends/17.png" alt=""></a>
+									</li>
+									<li>
+										<a href="#"><img title="Volcom" src="ico/logo_brends/18.png" alt=""></a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li><a class="active" title="" href="#">распродажи</a></li>
+						<li><a title="" href="#">блог</a></li>
+					</ul>
+					<ul class="social_nav">
+						<li><a title="VKontakte" target="_blank" href="#"><i class="fa fa-vk"></i></a></li>
+						<li><a title="Facebook" target="_blank" href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a title="YouTube" target="_blank" href="#"><i class="fa fa-youtube"></i></a></li>
+						<li><a title="Instagram" target="_blank" href="#"><i class="fa fa-instagram"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			$(document).ready(function() {
+				//$(".drop_menu").slideUp(1);
+				$(".main_nav > li").each(function() {
+
+					$(this).mouseenter(function() {
+						$(this).find(".drop_menu").addClass("active-drop_item");
+						$(this).find(".drop_menu").stop().slideDown({ duration: 500, easing: 'easeInExpo' });
+					});
+					$(this).mouseleave(function() {
+
+						$(this).find(".drop_menu").removeClass("active-drop_item");
+						$(this).find(".drop_menu").stop().slideUp();
+					});
+
+				});
+				$(".drop_menu").hide();
+				//$(".drop_menu.qqqwww").slideDown();
+
+
+				//				on("hover", function () {
+				//					$(this).find(".drop_menu").slideDown(slow);
+				//				})
+			});
+
+		</script>
+
+		<div class="content_main">

@@ -1,0 +1,114 @@
+// stuff collors
+$white: #ffffff;
+$main_white: #e9e9e9;
+$main_gray: #b1b1b1;
+$main_black: #464646;
+$main_red: #d41010;
+
+
+.logos_slider.popular .wr ul.popular_goods li[data-reduce]::before,
+.logos_slider.popular .wr ul.popular_goods li[data-new]::after{
+  z-index: 2;
+}
+body {
+  overflow: auto;
+}
+
+.help_index {
+  .wr {
+    display: flex;
+    .aside {
+      display: inline-block;
+      min-width: 210px;
+      max-width: 245px;
+      width: 100%;
+      border: 1px solid $main_gray;
+      padding: 0 30px;
+      height: 370px;
+      margin-right: 3%;
+      @media screen and (max-width: 1024px) {
+        display: none;
+      }
+      .name {
+        text-align: left;
+      }
+      li {
+        margin: 15px 0;
+        &.active a {
+          color: $main_red;
+        }
+      }
+      a {
+        font-size: 14px;
+        text-transform: none;
+
+      }
+    }
+    .main_help {
+      flex-grow: 1;
+      margin-bottom: 100px;
+
+      .containerr {
+        width: 100%;
+        .accordeon {
+          border-bottom: 1px solid $main_gray;
+          transition: 0.3s;
+          .accordeon_item {
+            position: relative;
+          }
+          .accordeon_item.active .accordeon_title{
+            border: 1px solid $main_red;
+            border-bottom: 1px solid transparent;
+          }
+          .accordeon_item.active .accordeon_content {
+            border: 1px solid $main_red;
+          }
+          .accordeon_item.active .accordeon_title {
+            color: $main_red;
+          }
+          .accordeon_item.active .accordeon_title:before {
+            transform: rotate(180deg);
+          }
+          .accordeon_title {
+            padding: 30px;
+            border: 1px solid $main_gray;
+            font-size: 20px;
+            transition: 0.3s;
+            @media screen and (max-width: 580px) {
+              font-size: 16px;
+              padding: 15px;
+            }
+            &:before{
+              content: "\f0d7";
+              font-family: 'FontAwesome';
+              margin-right: 30px;
+              display: inline-block;
+              transition: 0.3s;
+            }
+
+            &:first-child {
+              border-bottom: 1px solid transparent;
+            }
+          }
+          .accordeon_content {
+            padding: 30px 60px;
+            border: 1px solid $main_gray;
+            line-height: 2;
+            border-bottom: 1px solid transparent;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+//.mm-navbar {
+//  height: 40px;
+//}
+.mm-navbar > * {
+  padding: 3px 10px 0 10px;
+}
+.mm-title {
+  padding-top: 10px;
+}
